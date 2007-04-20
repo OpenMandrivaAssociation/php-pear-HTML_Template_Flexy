@@ -7,7 +7,7 @@
 
 Summary:	%{_pearname} - a flexible caching template engine based on SimpleTemplate
 Name:		php-pear-%{_pearname}
-Version:	1.2.4
+Version:	1.2.5
 Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
@@ -126,5 +126,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/%{_subclass}/Flexy
 %{_datadir}/pear/%{_class}/%{_subclass}/Flexy.php
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
