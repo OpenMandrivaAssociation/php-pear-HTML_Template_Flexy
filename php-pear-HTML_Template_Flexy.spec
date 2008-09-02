@@ -7,8 +7,8 @@
 
 Summary:	A flexible caching template engine based on SimpleTemplate
 Name:		php-pear-%{_pearname}
-Version:	1.2.5
-Release:	%mkrel 3
+Version:	1.3.4
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Template_Flexy/
