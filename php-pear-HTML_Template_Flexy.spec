@@ -5,15 +5,13 @@
 %define _requires_exceptions pear(Gtk/VarDump.php)\\|pear(Services/JSON.php)
 
 Name:		php-pear-%{upstream_name}
-Version:	1.3.9
-Release:	%mkrel 2
+Version:	1.3.10
+Release:	%mkrel 1
 Summary:	A flexible caching template engine based on SimpleTemplate
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Template_Flexy/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
-Patch0:		%{name}-case_fix.patch
-Patch1:		%{name}-path_fix.patch
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -64,8 +62,6 @@ author needs to use it too).
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 cd %{upstream_name}-%{version}
-%patch0 -p1
-%patch1 -p1
 
 %install
 rm -rf %{buildroot}
@@ -76,6 +72,7 @@ rm -rf %{buildroot}%{_datadir}/pear/.??*
 
 rm -rf %{buildroot}%{_datadir}/pear/docs
 rm -rf %{buildroot}%{_datadir}/pear/tests
+rm -rf %{buildroot}%{_datadir}/pear/data
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
@@ -99,6 +96,6 @@ fi
 
 %files
 %defattr(-,root,root)
-%doc %{upstream_name}-%{version}/Flexy/example.ini
+%doc %{upstream_name}-%{version}/TODO %{upstream_name}-%{version}/ChangeLog
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{upstream_name}.xml
