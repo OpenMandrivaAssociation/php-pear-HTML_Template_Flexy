@@ -5,8 +5,8 @@
 %define _requires_exceptions pear(Gtk/VarDump.php)\\|pear(Services/JSON.php)
 
 Name:		php-pear-%{upstream_name}
-Version:	1.3.11
-Release:	%mkrel 2
+Version:	1.3.12
+Release:	%mkrel 1
 Summary:	A flexible caching template engine based on SimpleTemplate
 License:	PHP License
 Group:		Development/PHP
