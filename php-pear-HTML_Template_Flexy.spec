@@ -6,12 +6,13 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.12
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	A flexible caching template engine based on SimpleTemplate
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Template_Flexy/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
+Patch0:		HTML_Template_Flexy-1.3.12-borkfix.diff
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -59,6 +60,7 @@ author needs to use it too).
 
 %prep
 %setup -q -c
+%patch0 -p0
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 cd %{upstream_name}-%{version}
