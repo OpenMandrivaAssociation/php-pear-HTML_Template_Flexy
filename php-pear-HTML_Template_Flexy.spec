@@ -6,7 +6,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.12
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	A flexible caching template engine based on SimpleTemplate
 License:	PHP License
 Group:		Development/PHP
@@ -60,7 +60,7 @@ author needs to use it too).
 
 %prep
 %setup -q -c
-%patch0 -p0
+%patch0 -p1
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 cd %{upstream_name}-%{version}
