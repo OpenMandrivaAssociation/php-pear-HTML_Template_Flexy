@@ -2,8 +2,6 @@
 %define		_subclass	Template
 %define		upstream_name	%{_class}_%{_subclass}_Flexy
 
-%define _requires_exceptions pear(Gtk/VarDump.php)\\|pear(Services/JSON.php)
-%define _requires_exceptions pear(HTML/Template/Flexy/Filter/SimpleTags.php)
 Name:		php-pear-%{upstream_name}
 Version:	1.3.11
 Release:	%mkrel 5
