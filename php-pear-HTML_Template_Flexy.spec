@@ -3,13 +3,13 @@
 %define		upstream_name	%{_class}_%{_subclass}_Flexy
 
 Name:		php-pear-%{upstream_name}
-Version:	1.3.11
-Release:	6
+Version:	1.3.12
+Release:	1
 Summary:	A flexible caching template engine based on SimpleTemplate
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Template_Flexy/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
+Source0:	http://download.pear.php.net/package/HTML_Template_Flexy-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -179,4 +179,5 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 * Tue Jul 19 2005 Oden Eriksson <oeriksson@mandriva.com> 1.2.1-1mdk
 - initial Mandriva package (PLD import)
+
 
