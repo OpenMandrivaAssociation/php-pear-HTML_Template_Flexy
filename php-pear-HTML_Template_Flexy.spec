@@ -5,7 +5,7 @@
 Summary:	A flexible caching template engine based on SimpleTemplate
 Name:		php-pear-%{modname}
 Version:	1.3.13
-Release:	4
+Release:	5
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/HTML_Template_Flexy/
@@ -75,3 +75,5 @@ install -m 644 %{modname}.xml %{buildroot}%{_datadir}/pear/packages
 %doc %{modname}-%{version}/TODO %{modname}-%{version}/ChangeLog
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{modname}.xml
+%{_datadir}/pear/doc/HTML_Template_Flexy/*
+%{_datadir}/pear/test/HTML_Template_Flexy/tests/*
