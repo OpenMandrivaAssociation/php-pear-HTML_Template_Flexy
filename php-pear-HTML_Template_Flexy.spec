@@ -8,7 +8,7 @@ Version:	1.3.13
 Release:	6
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/HTML_Template_Flexy/
+Url:		https://pear.php.net/package/HTML_Template_Flexy/
 Source0:	http://download.pear.php.net/package/HTML_Template_Flexy-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
